@@ -1,0 +1,30 @@
+
+.testimonial-card {
+    background-color: #febf00;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 40px;
+  }
+  
+  .quote-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quote-symbol {
+    font-family: 'CotorisBold', sans-serif;
+    font-size: 60px;
+    margin-right: 10px;
+  }
+  
+  .author-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .author-text strong {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  

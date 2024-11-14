@@ -1,0 +1,84 @@
+
+
+.about-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-section .side-img img {
+    position: absolute;
+    width: 350px;
+    bottom: 10px;
+    right: -200px;
+    z-index: -1;
+    
+  }
+
+  
+
+  .about-image {
+    position: relative;
+  } 
+
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+
+  .market-experiences {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ffffff;
+    color: #181818;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .market-experiences .circle {
+    width: 100px;
+    margin-right: 20px;
+    
+  }
+
+  .market-experiences .circle svg {
+    /* margin-top: 10px; */
+    margin-bottom: -20px
+  }
+
+  .about-text {
+    width: 45%;
+  }
+
+.tab-section p svg {
+  font-size: 25px;
+  color: #B52B1D;
+
+}
+
+
+.tab-section p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #B52B1D
+}
+
+.nav-tabs li button.active{
+  background-color: #B52B1D !important ;
+  color: white !important;
+  border-radius: 0;
+  border: transparent;
+}
+
+
+
+.nav-tabs li button{
+  color: #181818 !important; 
+}

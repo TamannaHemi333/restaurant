@@ -1,0 +1,57 @@
+.booking-section {
+  padding: 100px 0;
+  background-image: url("../../assets/images/booking_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+
+.booking-container {
+  max-width: 650px;;
+}
+
+
+.booking-title {
+  color: white;
+  margin-bottom: 35px;
+}
+
+.booking-title h5 {
+  color: #BD1F17;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.booking-title h5::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #BD1F17;
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 3px
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form textarea {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid white
+}
+
+::placeholder {
+  color: white
+}
+
+/* This is for input date icon */
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
