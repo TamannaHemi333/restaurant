@@ -39,3 +39,55 @@
 .hero-image img {
   width: 100%;
 }
+
+
+
+
+
+  /* RESPONSIVE */
+  @media (max-width: 575.98px) {
+
+  }
+
+
+@media (max-width: 767.98px) {
+
+  
+
+ }
+
+
+@media (max-width: 991.98px) {
+
+  .hero-section {
+    padding: 75px 15px;
+ 
+  }
+
+  .hero-info {
+    width: 100%
+  }
+
+  .hero-info h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero-info p{
+    font-size: 20px;
+    
+  }
+
+  
+  
+}
+
+
+@media (max-width: 1199.98px) {
+  
+ }
+
+
+@media (max-width: 1399.98px) {
+  
+ }

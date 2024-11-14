@@ -56,7 +56,7 @@ const About = () => {
                 className="mb-3"
               >
                 <Tab eventKey="about" title="About">
-                  <h2>Exceptional culinary experience and delicious food</h2>
+                  <h2 className="tab-title">Exceptional culinary experience and delicious food</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
 
                   <div className="d-flex align-items-center mt-5 tab-section">

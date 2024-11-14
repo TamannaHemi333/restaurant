@@ -3,10 +3,24 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../../assets/images/logo.png";
 import './Header.css'
+import { useState } from 'react';
 
 const Header = () => {
+  const [bgColor, setBgColor] = useState(false);
+
+  const changeValueScroll = ()=>{
+    const scrollValue = document.documentElement.scrollTop;
+    if(scrollValue > 200){
+        setBgColor(true);
+    } else {
+        setBgColor(false);
+    }
+};
+window.addEventListener('scroll', changeValueScroll);
+
+
     return (
-        <Navbar sticky="top" collapseOnSelect expand="lg" >
+        <Navbar sticky="top" collapseOnSelect expand="lg" className={bgColor ? "activeColor" : " "} >
       <Container>
         <Navbar.Brand href="#home">
             <img src={logo} alt="Logo" />

@@ -54,6 +54,11 @@
     width: 45%;
   }
 
+.tab-title {
+  font: 62px;
+}
+
+
 .tab-section p svg {
   font-size: 25px;
   color: #B52B1D;
@@ -81,4 +86,25 @@
 
 .nav-tabs li button{
   color: #181818 !important; 
+}
+
+
+
+
+
+
+
+@media (max-width: 991.98px) {
+  .about-section {
+    padding:35px 25px ;
+    
+  }
+
+  .tab-title {
+    font-size: 40px;
+  }
+
+  
+  
+  
 }

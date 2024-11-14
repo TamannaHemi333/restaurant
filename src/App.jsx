@@ -7,10 +7,11 @@ import FoodItem from "./components/FoodItem/FoodItem";
 import BookingForm from "./components/BookingForm/BookingForm";
 import Header from "./components/Header/Header";
 import Testimonial from "./components/Testimonial/Testimonial";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       {/* <Navbar /> */}
       <Header />
       <Hero />
@@ -19,13 +20,8 @@ const App = () => {
       <FoodItem />
       <BookingForm />
       <Testimonial />
-
-     
-      
-      
-
-    
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -1,10 +1,16 @@
 import './Testimonial.css'
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
+
 import  { useRef } from "react";
 import Slider from "react-slick";
-import person1 from '../../assets/images/person-1.png';
-import bg1 from '../../assets/images/tes-img-1.png';
+import TestimonialCard from './TestimonialCard';
+import person1 from '../../assets/images/c1.jpg';
+import person2 from '../../assets/images/c2.jpg';
+import person3 from '../../assets/images/c3.jpg';
+import imgOne from '../../assets/images/tomato.png';
+import imgTwo from '../../assets/images/grass.png';
+
 
 const Testimonial = () => {
 
@@ -24,10 +30,42 @@ const Testimonial = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
       };
+
+
+    const data = [
+        {
+            text: "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
+            name: "Khalid Al Dawsry",
+            designation: "Jeddah, Saudi",
+            img: person1
+            
+        },
+        {
+            text: "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
+            name: "John Done",
+            designation: "President",
+            img: person2
+            
+        },
+        {
+            text: "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
+            name: "Michel Jection",
+            designation: "Dancer",
+            img: person3
+            
+        },
+    ]
+
+
 
     return (
         <section className="testimonial-section">
+            <div>
+                <img src={imgOne} className='imageOne' alt="Image" />
+                <img src={imgTwo} className='imageTwo' alt="Image" />
+            </div>
             <div className="container">
 
                 {/* Section Title */}
@@ -48,96 +86,10 @@ const Testimonial = () => {
                     <Slider ref={slider => {
                             sliderRef = slider;
                             }} {...settings}>
-                        
-                        <div>
-                            <div className="row g-0">
-                                <div className="col-md-5">
-                                    <div className='testi-info'>
-                                        <p>
-                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.
-                                        </p>
-                                        <div className='w-100 '>
-                                            <div className='d-flex justify-content-between align-items-center  '>
-                                                <div className='person'>
-                                                    <h6>Khalid Al Dawsry</h6>
-                                                    <p>Jeddah, Saudi</p>
-                                                </div>
-                                                <div>
-                                                    <img className='img-fluid' src={person1} alt="person" />
-                                                </div>
-                                            </div>
-                                            <hr className='client-line' />
-                                            <hr className='client-line2' />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-7">
-                                    <div className='testi-image'>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="row g-0">
-                                <div className="col-md-5">
-                                    <div className='testi-info'>
-                                        <p>
-                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.
-                                        </p>
-                                        <div className='w-100 '>
-                                            <div className='d-flex justify-content-between align-items-center  '>
-                                                <div className='person'>
-                                                    <h6>Khalid Al Dawsry</h6>
-                                                    <p>Jeddah, Saudi</p>
-                                                </div>
-                                                <div>
-                                                    <img className='img-fluid' src={person1} alt="person" />
-                                                </div>
-                                            </div>
-                                            <hr className='client-line' />
-                                            <hr className='client-line2' />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-7">
-                                    <div className='testi-image'>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="row g-0">
-                                <div className="col-md-5">
-                                    <div className='testi-info'>
-                                        <p>
-                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.
-                                        </p>
-                                        <div className='w-100 '>
-                                            <div className='d-flex justify-content-between align-items-center  '>
-                                                <div className='person'>
-                                                    <h6>Khalid Al Dawsry</h6>
-                                                    <p>Jeddah, Saudi</p>
-                                                </div>
-                                                <div>
-                                                    <img className='img-fluid' src={person1} alt="person" />
-                                                </div>
-                                            </div>
-                                            <hr className='client-line' />
-                                            <hr className='client-line2' />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-7">
-                                    <div className='testi-image'>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
+                        {
+                            data.map( (item, index) => <TestimonialCard key={index} data ={item} /> )
+                        }
+          
                     </Slider>
                 </div>
 
