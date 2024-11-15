@@ -54,6 +54,11 @@
     .navbar {
       background-color: #B52B1D;
     }
+
+    .book-table {
+      font-size: 14px;
+      padding:  8px 20px
+  }
   
 }
 

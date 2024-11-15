@@ -40,15 +40,11 @@
     align-items: center;
   }
   .market-experiences .circle {
-    width: 100px;
+    width: 85px;
     margin-right: 20px;
     
   }
 
-  .market-experiences .circle svg {
-    /* margin-top: 10px; */
-    margin-bottom: -20px
-  }
 
   .about-text {
     width: 45%;
@@ -97,7 +93,24 @@
 @media (max-width: 991.98px) {
   .about-section {
     padding:35px 25px ;
+  }
+
+  .market-experiences {
+    width: 130px;
+    padding: 8px;
+  }
+
+  .market-experiences .circle {
+    margin-right: 10px;
     
+  }
+
+  .market-experiences p {
+    font-size: 9px;
+  }
+
+  .about-section .side-img img {
+    display: none; 
   }
 
   .tab-title {
@@ -107,4 +120,12 @@
   
   
   
+}
+
+
+@media (max-width: 1500px) {
+  
+  .about-section .side-img img {
+    right: -300px;
+  }
 }

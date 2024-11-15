@@ -28,8 +28,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
+.testi-info .shape {
+    position: absolute;
+    bottom: 50px;
+    left: -1px;
+}
 
 .testi-info p {
     font-size: 20px;
@@ -54,6 +60,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
    
+}
+
+.client-info {
+    width: 100%;
 }
 
 .person h6 {
@@ -98,3 +108,40 @@
     top: -25px; 
     left: -35px
 }
+
+
+
+@media (max-width: 991.98px) {
+    .testimonial-section {
+      padding: 35px 25px
+    }
+
+    .testi-info p {
+        font-size: 18px;
+        line-height: 28px;
+    
+    }
+
+    .testi-info {
+        background-color: #FEBF00;
+        padding: 50px;
+       
+    }
+
+    .client-info {
+        margin-top: 30px
+    }
+
+    .testimonial-section .imageOne,
+    .testimonial-section .imageTwo {
+        display: none;
+    }
+
+    
+    
+  
+    
+  
+    
+    
+  }

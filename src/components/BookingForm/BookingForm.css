@@ -55,3 +55,16 @@ form textarea {
   filter: invert(1);
 }
 
+
+
+@media (max-width: 991.98px) {
+  .booking-section {
+    padding: 35px 25px
+  }
+  
+
+  
+
+  
+  
+}

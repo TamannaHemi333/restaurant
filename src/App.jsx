@@ -8,6 +8,7 @@ import BookingForm from "./components/BookingForm/BookingForm";
 import Header from "./components/Header/Header";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Footer from "./components/Footer/Footer";
+import { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
       <BookingForm />
       <Testimonial />
       <Footer />
+
+      <Toaster  position="top-center"  reverseOrder={false}/>
     </>
   );
 }

@@ -5,7 +5,7 @@ import heroImag from '../../assets/images/hero_image.png'
 
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home">
       <div className="container">
         <div className='row'>
           <div className="col-md-6">

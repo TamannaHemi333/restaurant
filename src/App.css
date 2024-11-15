@@ -33,3 +33,46 @@ p {
     padding: 0;
     margin: 0
 }
+
+.book-table {
+    background-color: #febf00;
+    color: #0a1425;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 24px;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .book-table:hover {
+    background-color: #e5ac00;
+  }
+
+
+
+  a {
+    text-decoration: none;
+  }
+
+
+
+
+  @media (max-width: 991.98px) {
+
+    h2 {
+        font-size: 40px;
+    }
+    
+   
+    h5 {
+        font-size: 16px;
+    }
+    
+    
+    
+  }

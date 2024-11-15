@@ -25,7 +25,7 @@ const Testimonial = () => {
     };
 
     var settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -39,21 +39,26 @@ const Testimonial = () => {
             text: "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
             name: "Khalid Al Dawsry",
             designation: "Jeddah, Saudi",
-            img: person1
+            img: person1,
+            url: "https://www.youtube.com/embed/agupoIGOIs0?si=oNxB5AlYgnFffcB8"
+
             
         },
         {
             text: "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
             name: "John Done",
             designation: "President",
-            img: person2
+            img: person2,
+            url: "https://www.youtube.com/embed/agupoIGOIs0?si=oNxB5AlYgnFffcB8"
+
             
         },
         {
             text: "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
             name: "Michel Jection",
             designation: "Dancer",
-            img: person3
+            img: person3,
+            url: "https://www.youtube.com/embed/agupoIGOIs0?si=oNxB5AlYgnFffcB8"
             
         },
     ]
@@ -91,6 +96,10 @@ const Testimonial = () => {
                         }
           
                     </Slider>
+                    <div className="slider-arrow-mobile">
+                        <MdArrowBackIos className='me-4' onClick={previous} />
+                        <MdArrowForwardIos onClick={next} />
+                    </div>
                 </div>
 
 

@@ -19,7 +19,7 @@ const About = () => {
   const [key, setKey] = useState('about');
 
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="side-img">
           <img src={sideImg} alt="side Image" />
       </div>
@@ -36,7 +36,7 @@ const About = () => {
                           textColor: '#181818',
                           trailColor: '#EEF6FF',
                         })}
-                     />;
+                     />
                   </div>
                   <div >
                     <p>Market <br /> Experiences</p>
@@ -60,7 +60,7 @@ const About = () => {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
 
                   <div className="d-flex align-items-center mt-5 tab-section">
-                    <button className="book-table me-5">ABOUT MORE </button>
+                    <button className="book-table me-4">ABOUT MORE </button>
                     <p> <MdOutlinePhoneInTalk /> <span className="ms-2">+88 3426 739 485</span></p>
                   </div>
 
@@ -71,7 +71,7 @@ const About = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
 
                     <div className="d-flex align-items-center mt-5 tab-section">
-                      <button className="book-table me-5">ABOUT MORE </button>
+                      <button className="book-table me-4">VIEW MORE </button>
                       <p> <MdOutlinePhoneInTalk /> <span className="ms-2">+88 3426 739 485</span></p>
                     </div>
                 </Tab>
@@ -80,7 +80,7 @@ const About = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
 
                     <div className="d-flex align-items-center mt-5 tab-section">
-                      <button className="book-table me-5">ABOUT MORE </button>
+                      <button className="book-table me-4">CONTACT US </button>
                       <p> <MdOutlinePhoneInTalk /> <span className="ms-2">+88 3426 739 485</span></p>
                     </div>
                 </Tab>

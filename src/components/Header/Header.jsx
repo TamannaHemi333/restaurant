@@ -5,8 +5,10 @@ import logo from "../../assets/images/logo.png";
 import './Header.css'
 import { useState } from 'react';
 
+
 const Header = () => {
   const [bgColor, setBgColor] = useState(false);
+  
 
   const changeValueScroll = ()=>{
     const scrollValue = document.documentElement.scrollTop;
@@ -28,17 +30,18 @@ window.addEventListener('scroll', changeValueScroll);
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#features">About</Nav.Link>
-            <Nav.Link href="#features">Portfolio</Nav.Link>
-            <Nav.Link href="#features">Clients</Nav.Link>
-            <Nav.Link href="#features">Blog</Nav.Link>
-            <Nav.Link href="#features">Contact</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+            <Nav.Link href="#clients">Clients</Nav.Link>
+            <Nav.Link href="#blogs">Blog</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
             
             
           </Nav>
           <Nav>
-          <button className="book-table">BOOK A TABLE</button>
+            <a  className="book-table" href="#book-table">BOOK A TABLE</a>
+          
             
           </Nav>
         </Navbar.Collapse>

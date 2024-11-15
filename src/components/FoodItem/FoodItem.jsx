@@ -162,6 +162,12 @@ const FoodItem = () => {
           </Slider>
         </div>
 
+        <div className="slider-arrow-mobile">
+            <MdArrowBackIos className='me-4' onClick={previous} />
+            <MdArrowForwardIos onClick={next} />
+
+          </div>
+
         
       </div>
       
